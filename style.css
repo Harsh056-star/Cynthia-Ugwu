@@ -106,8 +106,9 @@ html, body{
 }
 .element{
     display: flex;
+    position: relative;
     align-items: center;
-    justify-content: left;
+    justify-content: space-between;
     width: 100%;
     padding: 3.5vw 0.5vw;
     padding-right: 0;
@@ -122,4 +123,47 @@ html, body{
 }
 .elementlast{
     border-bottom: 1px solid #888;
+}
+.element img{
+    display: none;
+    /* opacity: 0; */
+    height: 100%;
+    z-index: 999;
+    position: absolute;
+}
+#about{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: white;
+    padding: 10vw 10vw ;
+    padding-left: 40vw;
+    width: 100%;
+    background-color: black;
+}
+#textabout{
+    width: 25rem;
+    
+}
+#textabout h5{
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 10px;
+}
+#textabout{
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+#about img{
+    width: 200px;
+    
+}
+#textabout a{
+    padding: 12px 22px;
+    padding-top: 10px;
+    border: 1px solid white;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
 }
