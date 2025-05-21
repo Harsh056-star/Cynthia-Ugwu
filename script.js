@@ -101,4 +101,15 @@ document.querySelectorAll(".element").forEach(function(element){
     });
   });
 });
+const contents = documentquerySelector(".rollingcontent");
+const roller = documentquerySelector("#roller");
+const clone = container.cloneNode(true);
+roller.appendChild(clone);
+contents.forEach((content))
+ gsap.to(".rollingcontent", {
+    xPercent: -50,
+    repeat: -1,
+    ease: "none",
+    duration: 20,
+  });
  
