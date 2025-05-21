@@ -73,16 +73,32 @@ firstPageAnim();
 //Teeno element ko select karo, usko badd sabki movement pick karo, jab movement pta lg jaye to iska matlab h ki x and y ki position ke bdle img ko move kro, move krte waqt rotate karo and jaise jaise mouse tez chle waise rotation bhi tez ho jaye gi
 
 document.querySelectorAll(".element").forEach(function(element){
+  var rotate = 0;
+  var diffrot = 0;
+  element.addEventListener("mouseleave", function(dets){
+    
+    gsap.to(element.querySelector("img"),{
+      opacity: 0,
+      ease: Power3,
+      duration: 0.5,
+    });
+  });
+
   element.addEventListener("mousemove", function(dets){
     // console.log(details.clientX, details.clientY);
     // console.log(dets.clientY);
     var diff = dets.clientY - element.getBoundingClientRect().top;
-
+    diffrot = dets.clientX - rotate;
+    rotate = dets.clientX;
+    // gsap.utils.clamp(-20,20, diff);
     gsap.to(element.querySelector("img"),{
       opacity: 1,
-      ease: Power1,
+      ease: Power3,
       top: diff,
       left: dets.clientX,
+      rotate: gsap.utils.clamp(-20, 20, diffrot*0.5),
+      // duration: 0.5,
     });
   });
 });
+ 
