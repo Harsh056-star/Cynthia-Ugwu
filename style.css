@@ -157,10 +157,15 @@ html, body{
     transform: translate(-50%, -50%);
 }
 #second .button{
-     padding: .5vw 1.5vw;
-     margin: 2.5vw;
-     font-size: 1.5vw;
-     text-align: center;
+       padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5vw;
+  margin: 20px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 #roller{
     position: relative;
