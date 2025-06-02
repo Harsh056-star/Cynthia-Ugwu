@@ -156,6 +156,13 @@ html, body{
     position: absolute;
     transform: translate(-50%, -50%);
 }
+#second .button{
+     padding: .5vw 1.5vw;
+     margin: 2.5vw;
+     font-size: 1.5vw;
+     text-align: center;
+     
+}
 #roller{
     position: relative;
     overflow: hidden;
