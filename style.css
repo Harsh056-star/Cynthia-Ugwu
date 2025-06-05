@@ -157,7 +157,7 @@ html, body{
     transform: translate(-50%, -50%);
 }
 #second .button{
-       padding: 10px 20px;
+  padding: 10px 20px;
   background-color: #000000;
   color: white;
   border: 1px solid white;
