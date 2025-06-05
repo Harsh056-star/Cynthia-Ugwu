@@ -171,10 +171,6 @@ html, body{
     position: relative;
     overflow: hidden;
 }
-#rollerrollerwrapper{
-    border-bottom: 1px solid #888;
-    border-top: 1px solid #888;
-}
 #rollerwrapper{
     display: flex;
     overflow: hidden;
@@ -187,12 +183,13 @@ html, body{
     animation: scroll 20s linear infinite;
     white-space: nowrap;
     will-change: transform;
+     border-bottom: 1px solid #888;
+    border-top: 1px solid #888;
 }
 .rollingcontent img{
     height: 60px;
     margin-right: 40px;
     object-fit: contain;
-    
 }
 @keyframes scroll{
   0% {
