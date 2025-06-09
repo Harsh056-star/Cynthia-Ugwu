@@ -101,6 +101,25 @@ document.querySelectorAll(".element").forEach(function(element){
     });
   });
 });
+// script.js
+function updateClock() {
+  const now = new Date();
+
+  let hours = now.getHours();
+  let minutes = now.getMinutes();
+  let seconds = now.getSeconds();
+
+  // Add leading zeros if needed
+  hours = String(hours).padStart(2, '0');
+  minutes = String(minutes).padStart(2, '0');
+  seconds = String(seconds).padStart(2, '0');
+
+  const timeString = `${hours}:${minutes}:${seconds}`;
+
+  document.getElementById('clock').textContent = timeString;
+}
+
+
 const contents = documentquerySelector(".rollingcontent");
 const roller = documentquerySelector("#roller");
 const clone = container.cloneNode(true);
@@ -113,4 +132,6 @@ contents.forEach((content))
     duration: 20,
   });
   
- 
+ // Initial call and interval
+updateClock();
+setInterval(updateClock, 1000);
