@@ -170,21 +170,19 @@ html, body{
 #roller{
     position: relative;
     overflow: hidden;
-}
-#rollerwrapper{
     display: flex;
     overflow: hidden;
     position: relative;
     width: 100%;
-    background: white;
+    border-bottom: 1px solid #888;
+    border-top: 1px solid #888;
 }
 .rollingcontent{
     display: flex;
     animation: scroll 30s linear infinite;
     white-space: nowrap;
     will-change: transform;
-    border-bottom: 1px solid #888;
-    border-top: 1px solid #888;
+ 
 }
 .rollingcontent img{
     height: 60px;

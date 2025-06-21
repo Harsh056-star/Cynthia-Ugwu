@@ -120,8 +120,8 @@ function updateClock() {
 }
 
 
-const contents = documentquerySelector(".rollingcontent");
-const roller = documentquerySelector("#roller");
+const contents = document.querySelector(".rollingcontent");
+const roller = document.querySelector("#roller");
 const clone = container.cloneNode(true);
 roller.appendChild(clone);
 contents.forEach((content))
